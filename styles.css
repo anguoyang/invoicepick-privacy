@@ -1,0 +1,67 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: Canvas;
+  color: CanvasText;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  width: min(46rem, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid color-mix(in srgb, CanvasText 18%, transparent);
+}
+
+.product {
+  margin: 0;
+  color: #4765c6;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+h1 {
+  margin: 0.25rem 0 0.5rem;
+  font-size: clamp(2rem, 8vw, 3rem);
+  line-height: 1.15;
+}
+
+h2 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.25rem;
+}
+
+p {
+  margin: 0.5rem 0 1rem;
+}
+
+.updated {
+  color: color-mix(in srgb, CanvasText 65%, transparent);
+}
+
+a {
+  color: #4765c6;
+}
+
+code {
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+}
+
+.support {
+  max-width: 38rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .product,
+  a {
+    color: #aebfff;
+  }
+}
